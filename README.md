@@ -2,7 +2,19 @@
 
 From <https://github.com/filamentphp/filament/issues/15557>
 
-If you run :
+## Prepare
+
+```bash
+cp .env.example .env
+composer install
+php artisan key:generate
+php artisan migrate
+php artisan dusk:chrome-driver
+```
+
+## Problem
+
+If you run:
 
 ```bash
 composer require "filament/filament=3.2.77" -W
